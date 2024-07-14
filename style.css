@@ -285,14 +285,15 @@ nav img {
 .project-sub-container {
     align-items: center;
     justify-content: center;
- 
+
 
     padding: 0px 32px 0px 32px;
 }
-.projects{
+
+.projects {
     display: flex;
     flex-direction: column;
-    gap: 40px   ;
+    gap: 40px;
 }
 
 .project {
@@ -302,6 +303,7 @@ nav img {
     padding: 20px 0px 20px 0px;
     border: 1px solid gray;
     border-radius: 10px;
+    align-items: center;
 }
 
 .project-img {
@@ -321,6 +323,114 @@ nav img {
     flex-direction: column;
 }
 
+#p2 {
+    flex-direction: row-reverse;
+}
+
+.review {
+    padding: 60px 80px 60px 80px;
+    border: 1px solid black;
+    margin-top: 80px;
+
+
+}
+
+.r-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 5%;
+    padding: 40px;
+    /* text-align: center; */
+}
+
+.card-img {
+    width: 30%;
+    border-radius: 60%;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 40%;
+    background-color: gray;
+}
+
+.mar {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card>hr {
+    height: 2px;
+    background: #000;
+    width: 90%;
+}
+
+
+
+
+.contact {
+    margin-top: 30px;
+    display: flex;
+    background-color: #FFF8F3;
+    justify-content: center;
+
+
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact p {
+    font-size: 16px;
+
+}
+
+.res-h-text {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.message-box {
+    width: 40%;
+}
+
+
+footer {
+    padding: 130px 230px;
+    background-color: #FFF8F3;
+    display: flex;
+    gap: 100px;
+}
+
+input[type="text"],
+footer input[type="email"],
+footer textarea {
+    display: block;
+    height: 70%;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 90%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -333,12 +443,18 @@ nav img {
     nav,
     .options,
     .hero,
-    .about , 
-    .project-container {
+    .about,
+    .project-container,
+    .contact {
         flex-direction: column;
         gap: 10px;
 
 
+    }
+
+    .experience-title {
+        flex-direction: column;
+        text-align: center;
     }
 
     .skills {
@@ -347,20 +463,24 @@ nav img {
 
     }
 
-    .skills-container {
+    .skills-container,
+    .contact {
         padding: 20px 30px;
     }
 
-    .about {
+    .about,
+    .project-container,
+    .review {
         padding: 10px;
     }
 
-    .dis {
-        display: none;
+    .review {
+        margin: 20px;
     }
 
     .about-description,
-    .about>.p-img {
+    .about>.p-img,
+    .project {
         justify-content: center;
         align-items: center;
         width: 75%;
@@ -370,6 +490,67 @@ nav img {
 
     .about>.p-img img {
         padding-left: 18px;
+    }
+
+    .project-dtails {
+        width: 75%;
+
+
+    }
+
+    .project-dtails>h2 {
+        font-size: large;
+        text-align: center;
+        margin: 0;
+    }
+
+    .project-dtails>h3 {
+        font-size: large;
+        text-align: center;
+        margin: 0;
+    }
+
+    .project-dtails>p {
+        font-size: small;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 75%;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    #p2 {
+        flex-direction: column;
+    }
+
+    .r-cards {
+        grid-template-columns: none;
+        padding-bottom: 10px;
+
+    }
+    .message-box{
+        width: 80%;
+    }
+    input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+
+    .dis {
+        display: none;
     }
 
 
