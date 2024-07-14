@@ -294,6 +294,7 @@ nav img {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .project {
@@ -435,12 +436,37 @@ footer textarea {
 
 @media screen and (max-width: 768px) {
 
-    nav {
-        display: none;
+    nav img {
+        width: 15%;
     }
+    .icon>h1{
+        font-size: 2em;
+    }
+    .icon{
+        width: 60%;
+    }
+    .hero-all-info{
+        flex-direction: column-reverse;
+        padding: 20px 30px;
+    }   
+    .hero-info {
+        width: 70%;
+    }
+    .hero-img{
+        width: 60%;
+        padding-left: 7%;
+    }
+    
+    .sub-title {
+        font-size: 32px;
 
-
-    nav,
+    }
+    .title{
+        font-size: 32px;
+        
+    }
+    
+    
     .options,
     .hero,
     .about,
@@ -470,7 +496,7 @@ footer textarea {
 
     .about,
     .project-container,
-    .review {
+    .review, header {
         padding: 10px;
     }
 
@@ -532,13 +558,17 @@ footer textarea {
         padding-bottom: 10px;
 
     }
-    .message-box{
+    .message-box ,.contact-info{
         width: 80%;
     }
     input[type="text"],
     footer input[type="email"],
     footer textarea {
         width: 80%;
+    }
+    .contact{
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -552,6 +582,5 @@ footer textarea {
     .dis {
         display: none;
     }
-
 
 }
