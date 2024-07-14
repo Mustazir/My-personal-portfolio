@@ -434,23 +434,45 @@ footer textarea {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
+
+    .button-primary {
+
+        color: rgb(255, 255, 255);
+        font-family: Sora;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 2%;
+        padding: 8px 10px;
+        border-radius: 4px;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        gap: 10px;
+        border: none;
+    }
+
+    .description{
+        font-size: 9px;
+    }
+    
 
     nav img {
         width: 15%;
     }
     .icon>h1{
-        font-size: 2em;
+        font-size: 1em;
     }
     .icon{
         width: 60%;
     }
     .hero-all-info{
         flex-direction: column-reverse;
-        padding: 20px 30px;
+        padding: 20px 10px;
     }   
     .hero-info {
-        width: 70%;
+        width: 90%;
     }
     .hero-img{
         width: 60%;
@@ -458,11 +480,14 @@ footer textarea {
     }
     
     .sub-title {
-        font-size: 32px;
+        font-size: 20px;
+        line-height: normal;
 
     }
     .title{
-        font-size: 32px;
+        font-size: 20px;
+        line-height: normal;
+        margin: 0px;
         
     }
     
@@ -488,7 +513,9 @@ footer textarea {
         gap: 4px;
 
     }
-
+    .skills-container{
+        gap: 20px   ;
+    }
     .skills-container,
     .contact {
         padding: 20px 30px;
