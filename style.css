@@ -626,8 +626,9 @@ footer textarea {
     .skill:hover {
         transform: scale(1.08);
     
-    
-    
+    }
+    .card:hover.card:hover{
+        transform: scale(1.05);   
     }
     .dis {
         display: none;
