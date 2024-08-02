@@ -36,7 +36,7 @@ body {
     font-size: 10px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: -2%;
+    
     text-align: center;
     text-transform: capitalize;
 }
@@ -200,16 +200,26 @@ nav img {
 
 
 .skill {
-
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    transition: transform  ease-out 1s;
 
+ 
+}
 
+.skill:hover{
+    transform: scale(1.2);
+    
 
+    
+}
+.card:hover.card:hover{
+    transform: scale(1.2);
+    
 }
 
 .skill .imgs {
@@ -348,6 +358,7 @@ nav img {
 }
 
 .card {
+    transition: transform  ease-out 1s;
     width: 70%;
     display: flex;
     flex-direction: column;
